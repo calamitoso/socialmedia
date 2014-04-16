@@ -1,0 +1,122 @@
+html { 
+    font-size: 62.5%;
+}
+
+body{
+    background: rgb(229, 234, 237);
+    color: #999;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+h1, h2{
+    color: rgb(45, 160, 213);
+    font-weight: 300;
+}
+
+p, li{
+    line-height: 1.6;
+}
+
+.font-size-12{
+    font-size: 1.2rem;
+    font-size: 12px;
+}
+
+.font-size-24{
+    font-size: 2.4rem;
+    font-size: 24px;
+}
+
+.font-size-48{
+    font-size: 4.8rem;
+    font-size: 48px;
+}
+
+.font-weight-bold{
+    font-weight: 700;
+}
+
+/*.inline-list{
+    display: inline;
+}*/
+
+.inline-list li{
+    display: inline-block;
+}
+
+
+.color-666{
+    color: #666;
+}
+
+.color-roforofo{
+    color: rgb(25, 174, 192);
+}
+
+.bg-shade{
+    background: rgb(219, 224, 227);
+}
+
+.panel{
+    margin-left: 2em;
+}
+
+.img-crop-60{
+    overflow: hidden;
+    padding-bottom: 60%;
+    height: 0;
+    position: relative;
+}
+
+.img-crop img{
+    position: absolute;
+    bottom: 0;
+}
+
+.margin-0{
+    margin: 0;
+}
+
+.padding-0{
+    padding: 0;
+}
+
+.margin-bottom-0{
+    margin-bottom: 0;
+}
+
+.row{
+    background: #fff; 
+}
+
+.wrapper{
+    padding: 2em;
+}
+
+.panels{
+    padding: 2em 2em 2em 0;
+}
+
+.share{
+    padding: 1em 2em;
+    text-align: right;
+}
+
+.share li{
+    margin-left: 1em;
+}
+
+.share a{
+    background-color: #fff;
+    border-radius: .5em;
+    color: #666;
+    display: block;
+    padding: .25em .5em;
+    text-decoration: none;
+}
+
+.share a:hover{
+    background-color: #ffc;
+}
