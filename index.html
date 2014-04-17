@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,15 +21,34 @@
     </head>
     <body>
 
+        <div id="fb-root"></div>
+
         <div class="row">
             <div class="columns">
                 <div class="wrapper bg-shade share clearfix">
                     <ul class="inline-list margin-0 padding-0"><!--
+
                         --><li class="hide-for-small">Share this:</li><!--
-                        --><li><a id="fb" href="#"><span class="icon-facebook"></span> <span class="hide-for-small">Facebook</span> <span class="social-media-count"></span></a></li><!--
-                        --><li><a id="tw" href="#"><span class="icon-twitter"></span> <span class="hide-for-small">Twitter</span> <span class="social-media-count"></span></a></li><!--
-                        --><li><a id="li" href="#"><span class="icon-linkedin"></span> <span class="hide-for-small">Linkedin</span> <span class="social-media-count"></span></a></li><!--
-                        --><li><a id="em" href="#"><span class="icon-image"></span> <span class="hide-for-small">E-mail</span></a></li><!--
+
+                        --><li><a id="fb" href="#"><span class="icon-facebook"></span> <!---
+                            --><span class="hide-for-small">Facebook sharer</span></a><!--
+                            --><span id="fb-count" class="social-media-count"></span><!--
+                        --></li><!--
+
+                        --><li><a id="tw" href="#"><span class="icon-twitter"></span> <!---
+                            --><span class="hide-for-small">Twitter</span></a><!--
+                            --><span id="tw-count" class="social-media-count"></span><!--
+                        --></li><!--
+
+                        --><li><a id="li" href="#"><span class="icon-linkedin"></span> <!---
+                            --><span class="hide-for-small">Linkedin</span></a><!--
+                            --><span id="li-count" class="social-media-count"></span><!--
+                        --></li><!--
+
+                        --><li><a id="em" class="border-radius-4" href="mailto:joe@info.com"><span class="icon-image"></span>> <!---
+                            --><span class="hide-for-small">E-mail</span></a><!--
+                        --></li><!--
+
                     --></ul>
                 </div>
             </div>
@@ -48,43 +67,43 @@
         <div class="row">
             <div class="panels clearfix">
                 <div class="medium-4 columns">
-                    <div class="panel">
+                    <div class="panel" id="panel_1">
                         <div class="img-crop-60">
                             <img src="img/01.jpg">
                         </div>
-                        <p class="margin-bottom-0 font-weight-bold">Vestibulum sodales lobortis</p>
-                        <p class="margin-0 font-size-12 color-roforofo">Vestibulum sodales lobortis augue, volutpat facilisis orci convallis sit amet. Phasellus ultrices sodales massa a rutrum.</p>
+                        <p class="margin-bottom-0 font-weight-bold panel-name">Vestibulum sodales lobortis <a href="#" class="panel-share">Share this</a></p>
+                        <p class="margin-0 font-size-12 color-roforofo panel-caption">Vestibulum sodales lobortis augue, volutpat facilisis orci convallis sit amet. Phasellus ultrices sodales massa a rutrum.</p>
                     </div>
                 </div>
                 <div class="medium-4 columns">
-                    <div class="panel">
+                    <div class="panel" id="panel_2">
                         <div class="img-crop img-crop-60">
                             <img src="img/02.jpg">
                         </div>
-                        <p class="margin-bottom-0 font-weight-bold">Proin sit amet nibh sed</p>
-                        <p class="margin-0 font-size-12 color-roforofo">Nunc feugiat lobortis neque at feugiat. Proin sit amet nibh sed urna sodales cursus. Quisque commodo turpis vitae aliquam dignissim. Etiam erat nunc, mattis ac eros sed, ornare lacinia eros. Maecenas tincidunt ullamcorper enim, sit amet fringilla ante elementum nec. </p>
+                        <p class="margin-bottom-0 font-weight-bold panel-name">Proin sit amet nibh sed <a href="#" class="panel-share">Share this</a></p>
+                        <p class="margin-0 font-size-12 color-roforofo panel-caption">Nunc feugiat lobortis neque at feugiat. Proin sit amet nibh sed urna sodales cursus. Quisque commodo turpis vitae aliquam dignissim. Etiam erat nunc, mattis ac eros sed, ornare lacinia eros. Maecenas tincidunt ullamcorper enim, sit amet fringilla ante elementum nec. </p>
                     </div>
                 </div>
                 <div class="medium-4 columns">
-                    <div class="panel">
+                    <div class="panel" id="panel_3">
                         <div class="img-crop img-crop-60">
                             <img src="img/03.jpg">
                         </div>
-                        <p class="margin-bottom-0 font-weight-bold">Maecenas ut velit augue</p>
-                        <p class="margin-0 font-size-12 color-roforofo">Sed in purus ut risus auctor euismod ut in sapien. In in mauris et purus sollicitudin elementum a id nisl. Duis iaculis sed neque sit amet commodo. Maecenas ut velit augue. Donec varius augue sit amet tincidunt tincidunt.</p>
+                        <p class="margin-bottom-0 font-weight-bold panel-name">Maecenas ut velit augue <a href="#" class="panel-share">Share this</a></p>
+                        <p class="margin-0 font-size-12 color-roforofo panel-caption">Sed in purus ut risus auctor euismod ut in sapien. In in mauris et purus sollicitudin elementum a id nisl. Duis iaculis sed neque sit amet commodo. Maecenas ut velit augue. Donec varius augue sit amet tincidunt tincidunt.</p>
                     </div>
                 </div>
             </div>
         </div>
 
 
-    
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <script src="js/socialmedia.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+        <script src="js/socialmedia.js"></script>
 
-  </body>
+    </body>
 </html>
