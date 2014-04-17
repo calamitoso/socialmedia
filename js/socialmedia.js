@@ -97,11 +97,10 @@ $(function() {
                 method:     'feed',
                 link:       'http://calamitoso.github.io/socialmedia/',
                 name:       name.html(),
-                picture:    window.location.host + '/' + picture.attr('src')
+                picture:    window.location.host + window.location.pathname + picture.attr('src')
             };
 
         console.log(fBUIOptions);
-
 
         FB.ui(fBUIOptions, function(response){
             console.log(response);
